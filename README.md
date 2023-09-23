@@ -27,9 +27,6 @@ https://github.com/anubhavv106/Portfolio.github.io.git
 - CSS
 - JavaScript
 
-## 🎥 Demo Video
-
-
 ## 📝 License
 
 This project is licensed under the [MIT License](LICENSE).
