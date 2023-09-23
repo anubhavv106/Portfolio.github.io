@@ -724,12 +724,12 @@ body{
     padding-bottom: 40px;
 }
 
-.portfolio-text{
+.portfolio-text {
     width: 40%;
     padding-left: 1%;
     margin: 1%;
-    margin-left: -40px;
-    margin-top: 160px;
+    margin-left: 51px;
+    margin-top: 25px;
     z-index: 3;
     opacity: 1;
     background: #080808;
@@ -800,11 +800,13 @@ body{
         height: 100vmin;
         width: 400px;
         position: relative;
+        object-fit: contain;
         /* object-fit: scale-down; */
     }
     .portfolio-image{
         height: 400px;
         width: 40%;
+        object-fit: contain;
     }
 .portfolio-image img::before{
     content: "";
@@ -1478,6 +1480,7 @@ For devices with smaller width like mobile phone
     }
         .portfolio-image{
             position: relative;
+             object-fit: contain;   
         }
             .portfolio-text h2{
                 font-size: 22px;
@@ -1501,10 +1504,12 @@ For devices with smaller width like mobile phone
             .portfolio-image img{
                 height: 300px;
                 width: 100%;
+                object-fit: contain;
             }
             .portfolio-image{
                 height: 300px;
                 width: 90%;
+                object-fit: contain;
             }
             #navigation-bar img{
                 height: 80px;
@@ -1949,6 +1954,7 @@ for tabs and large phones
     }
         .portfolio-image{
             position: relative;
+            object-fit: contain;
         }
             .portfolio-text h2{
                 font-size: 35px;
@@ -1973,10 +1979,12 @@ for tabs and large phones
                 height: 380px;
                 width: 100%;
                 position: relative;
+                object-fit: contain;
             }
             .portfolio-image{
                 height: 380px;
                 width: 70%;
+                object-fit: contain;
             }
             #navigation-bar img{
                 height: 80px;
