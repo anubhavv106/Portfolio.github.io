@@ -15,7 +15,8 @@
   <!--favicon-img--> 
 <link rel="icon" type="image/png" href="images/favicon.ico">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <!-- Vendor CSS Files -->
 <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 <link href="assets/vendor/bootstrap/css/bootstrap-grid.min.css" rel="stylesheet">
@@ -328,6 +329,7 @@
              </div>
         <!--portfolio end-->
         <!--blog-->
+<body>
         <div id="blog">
 
         <div class="blog-header"> Blogs</span>
@@ -350,9 +352,7 @@
         <!--blog end-->
         <!--contact-->
      <div id="contact">
-      
-
-         <div class="contact-header">Contact <span class="color"> Me</span>
+          <div class="contact-header">Contact <span class="color"> Me</span>
         <div class="contact-header-caption"> <span class="color"> Get</span> In Touch.</div></div>
         <div class="contact-content">
             <!--Contact form-->
@@ -360,19 +360,65 @@
                  <div class="form-header">
                      Message Me
                  </div>
-                 <form id="myForm" action="#">
+                 <form action="">
                     <div class="input-line">
-                        <input  id="name" type="text" placeholder="Name" class="input-name">
-                        <input id="email" type="email" placeholder="Email"  class="input-name">
+                        <input  id="Name" type="text" placeholder="Name" class="input-name">
+                        <input id="Email" type="email" placeholder="Email"  class="input-name">
                     </div>
-                    <input type="text" id="subject" placeholder="subject" class="input-subject">
-                    <textarea id ="body" class="input-textarea" placeholder="message"></textarea>
-                    <button type="button" id ="submit" value="send">Submit</button>
+                    <input type="text" id="subject" placeholder="Subject" class="input-subject">
+                    <textarea id ="message" class="input-textarea" placeholder="Message"></textarea>
+                    <button type="button"value="button" onclick="Send() ">Submit</button>
                  </form>
                
              </div>
            </div>
+           <script>
+
+            function Send(){
+    
+              
+               var name = document.getElementById("Name").value;
+               var email = document.getElementById("Email").value;
+               var sub = document.getElementById("subject").value;
+               var mess = document.getElementById("message").value;
+    
+               var body = "Name: " + name + "<br/><br> Email:" + email + "<br><br/> Message:" + mess;
+               if (name === "" || email === "" || sub === "" || mess === "") {
+            swal("Error", "Please fill in all fields.", "error");
+            return;
+               }
+                
+               console.log(body);
+                Email.send({
+    
+                 SecureToken : "81f67246-eecd-4736-ad63-6fc573b41367",
+                 To : 'avdzav10@gmail.com',
+                 From : "av106@anubhavverma.tech",
+                 Subject : sub,
+                 Body : body
+                }).then(
+                    message =>{
+                        if(message=='OK'){
+    
+                            swal("Successfull", "Your mail has been Sent", "success");
+                        }
+                        else{
+    
+                            swal("Something Wrong", "Your Data is not Received", "error");
+                        }
+                    }
+                  );
+    
+                
+            
+            }
+    
+           
+    
+    </script>
         </div>
+
+</body>
                     
                     <div class="footer">
                         <div class="footer-text">
@@ -395,9 +441,10 @@
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    
   
     <!-- Template Main JS File -->
-    <script src="{% static 'assets/js/main.js' %}"></script>
+
 
 
 </body>
