@@ -717,7 +717,7 @@ body{
 }
 
 .header-caption{
-    opacity:.8;
+    /* opacity:.8; */
     display: block;
     font-size: 20px;
     font-family: raleway;
@@ -740,20 +740,21 @@ body{
 }
 
 .portfolio-text {
-    width: 40%;
+    width: 28%;
     padding-left: 1%;
     margin: 1%;
-    margin-left: 51px;
+    margin-left: 25px;
     margin-top: 25px;
     z-index: 3;
     opacity: 1;
     background: #080808;
     padding-top: 10px;
     padding-bottom: 10px;
+    border-radius: 12px;
 }
 
 .portfolio-text h2{
-    font-size: 35px;
+    font-size: 30px;
     font-family: poppins;
     font-weight: 200;
     padding: 20px;
@@ -762,17 +763,17 @@ body{
 }
 .portfolio-text p{
     font-size: 16px;
-    opacity: .8;
+    opacity: 0.9;
     font-family: poppins;
     font-weight: 200;
     padding: 20px;
 }
 .portfolio-text button{
-    font-size: 16px;
-    opacity: .8;
+    font-size: 14px;
+    /* opacity: .8; */
     font-family: poppins;
     font-weight: 200;
-    padding: 10px 20px;
+    padding: 8px 16px;
     background:transparent;
     color:#c70039;
     transition: all .4s ease;
@@ -812,11 +813,11 @@ body{
     text-align: center;
 }
     .portfolio-image img{
-        height: 100vmin;
-        width: 400px;
-        position: relative;
-        object-fit: contain;
-        /* object-fit: scale-down; */
+        height: 60vmin;
+
+        width: auto;
+        max-width: 100%;
+
     }
     .portfolio-image{
         height: 400px;
