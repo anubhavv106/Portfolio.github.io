@@ -813,16 +813,16 @@ body{
     text-align: center;
 }
     .portfolio-image img{
-        height: 60vmin;
-
-        width: auto;
-        max-width: 100%;
+        height: 400px;
+        width:100% ;
+        object-fit: contain;
 
     }
     .portfolio-image{
         height: 400px;
         width: 40%;
         object-fit: contain;
+        
     }
 .portfolio-image img::before{
     content: "";
