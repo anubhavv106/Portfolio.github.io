@@ -1426,8 +1426,7 @@ For devices with smaller width like mobile phone
     }
     .about-img img{
         width: 280px;
-        height:220px;
-        padding: 5px;
+        height: 295px;
         border-radius: 10%;
     }
     .about-img {
