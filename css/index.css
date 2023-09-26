@@ -1329,7 +1329,7 @@ For devices with smaller width like mobile phone
         left: 0;
         bottom: 0;
         position: absolute;
-        padding: 10px;
+        padding: 28px;
         height: auto;
         display: flex;
         flex-direction: row;
