@@ -213,3 +213,37 @@ h1{
     width: 100%;
     height: 10px;
 }
+/*--------------------------------------------------------------
+# Credits
+--------------------------------------------------------------*/
+.credits {
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 15px;
+  text-align: right;
+  font-size: 15px;
+  color: #fff;
+  z-index: 999999;
+  margin-bottom: -5px;
+}
+
+@media (max-width: 992px) {
+  .credits {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.credits a {
+  color: #c70039;
+  transition: 0.3s;
+  font-weight: bold;
+  text-decoration:none;
+}
+
+.credits a:hover {
+  color: #fff;
+}
