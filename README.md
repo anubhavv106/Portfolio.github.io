@@ -32,7 +32,7 @@ https://github.com/anubhavv106/Portfolio.github.io.git
 https://github.com/anubhavv106/Portfolio.github.io/assets/112748712/09abd5d4-6850-47a2-bef9-c127e95adc6b
 
 ## 📝 License
-view the project [Here](https://www.google.com)
+
 This project is licensed under the [MIT License](LICENSE).
 
 Feel free to contribute, provide feedback, and use this project for learning purposes!
